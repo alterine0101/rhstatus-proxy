@@ -1,0 +1,17 @@
+{
+    "name": "alterine0101/rhstatus-proxy",
+    "require": {
+        "vlucas/phpdotenv": "^5.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alterine0101\\RhstatusProxy\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Reinhart Previano Koentjoro",
+            "email": "reinhart@reinhart1010.id"
+        }
+    ]
+}
