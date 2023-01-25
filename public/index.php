@@ -26,7 +26,10 @@ function submit_report(){
   $file = fopen("../data/$device_id.json", "w");
   $json = json_encode([
     "reportingSource" => $_POST["reportingSource"],
-    "lastUpdated" => time()
+    "lastUpdated" => time(),
+    "currentExternalIP" => $_POST["currentExternalIP"],
+    "currentInternalIP" => $_POST["currentInternalIP"],
+    "currentSSID" => $_POST["currentSSID"],
   ]);
   fwrite($file, $json);
   fclose($file);
